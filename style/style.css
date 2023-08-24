@@ -10,10 +10,7 @@
 }
 
 body{
-    background-color: black;
-    /* display: var(--gak-biasa); */
-    /* border: 1px solid; */
-    /* height: 100vh; */
+    background-color: #1560bd;
 }
 
 .wraper{
@@ -26,6 +23,25 @@ body{
 }
 
 span{
-    color: white;
+    color: rgb(66, 54, 54);
     font-family: 'League Spartan';
+    font-weight: bolder;
 }
+
+.wraper h3{
+    font-size: 30px;
+    line-height: 54px;
+}
+
+.wraper h4{
+    line-height: 19px;
+}
+
+.wraper a{
+    color: aqua;
+}
+
+.wraper a:hover{
+    color: greenyellow;
+}
+
