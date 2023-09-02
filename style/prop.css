@@ -3,13 +3,24 @@
     padding: 0;
 }
 
-body{
+
+body {
     background-color: #f38530b4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
+
+
+nav{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 
 .box{
     /* border: 1px solid; */
@@ -18,4 +29,132 @@ body{
     background-color: #fa6800;
     border-radius: 30px;
     box-shadow: 0 0 50px#1a0e07;
+}
+
+/* Gaya untuk mode terang */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; */
+}
+
+.im{
+    /* border: 1px solid; */
+    width: 240px;
+    margin-left: 20px;
+}
+
+/* {
+    height: 43px;
+} */
+
+.im img{
+    width: 240px;
+}
+
+.im img:hover{
+    /* position: absolute; */
+    border: 1px solid blueviolet;
+    box-shadow: 0 0 60px black;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.crep{
+    /* border: 1px solid; */
+    height: 61vh;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+}
+
+.text-animasi {
+    position: absolute;
+    /* border: 1px solid; */
+    /* margin-top: 3px; */
+    /* margin-right: 953px; */
+    /* font-size: 24px; */
+    font-weight: bold;
+    /* white-space: nowrap; */
+    color: rgba(30, 110, 121, 0.897);
+    overflow: hidden;
+    border-right: 2px solid #0c0909; /* Simulasikan kursor yang berkedip */
+}
+
+span h4{
+    margin-top: 23px;
+}
+
+button {
+    /* right: 123px; */
+    /* position: absolute; */
+    padding: 10px 20px;
+    font-size: 18px;
+    /* width:40px; */
+    /* cursor: pointer; */
+    border: 1px solid;
+    /* background-color: blue; */
+    /* color: blue; */
+    background: none;
+    border: none;
+    border-radius: 70px;
+    animation: colorChange 2s infinite alternate;
+}
+
+.dark-button{
+    animation: colorChange2 2s infinite alternate;
+}
+
+button i{
+    /* width: 1px; */
+    /* height: 100px; */
+    border: 9px solid transparent;
+    cursor: pointer;
+    /* border-top: 4px solid #333; */
+    border-radius: 100%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes colorChange2 {
+    0% {
+        /* background-color: #333; */
+        color: #fff;
+    }
+    100% {
+        /* background-color: #fff; */
+        color: grey;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        /* background-color: #333; */
+        color: #fff;
+    }
+    100% {
+        /* background-color: #fff; */
+        color: #333;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.avatar img{
+    /* position: absolute; */
+    width: 390px;
+    border-radius: 100px;
+    background-color: rgb(20, 66, 105);
 }
