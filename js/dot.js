@@ -1,6 +1,6 @@
 // var i = 0;
-// var txt = 'VisitKlaten[dot]Com - Peta Pariwisata dan Media Iklan Di Kabupaten Klaten. Merupakan Media Informasi Pariwisata, Serba-Serbi Pariwisata dan Media Iklan di area Klaten, Surakarta, Jogja, Karanganyar, Boyolali, Sragen dan Sekitarnya'; /* isi dengan teks yang diinginkan */
-// var speed = 50; /* Kecepatan atau durasi efek dalam milidetik */
+// var txt = 'contoh texs'*/
+// var speed = 50;
 
 // function typeWriter() {
 //   if (i < txt.length) {
@@ -52,10 +52,12 @@ typeText();
 function toggleTheme() {
   const body = document.body;
   const box = document.getElementById('box');
+  const box2 = document.getElementById('box2');
   const tgle = document.getElementById('toggle-theme');
   body.classList.toggle('dark-mode');
   box.classList.toggle('dark-mode');
-  tgle.classList.toggle('dark-button');
+  box2.classList.toggle('dark-mode');
+  tgle.classList.toggle('dark-mode');
   // body.classList.toggle('light-mode');
 }
 

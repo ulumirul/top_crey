@@ -3,20 +3,39 @@
     padding: 0;
 }
 
+:root{
+    --bg: #f38530b4;
+    --bg2: #fa6800;
+    --color: black;
+    --animasiTex: rgb(30, 110, 121);
+    --animasiButton: colorChange 2s infinite alternate;
+}
+
+.dark-mode{
+    --bg:  #333;
+    --bg2:  #333;
+    --color: white;
+    --animasiTex: rgb(180, 180, 27);
+    --animasiButton: colorChange2 2s infinite alternate;
+}
 
 body {
-    background-color: #f38530b4;
+    background-color: var(--bg);
     display: flex;
-    justify-content: center;
+    padding-top: 42px;
+    padding-bottom: 42px;
+    /* justify-content: center; */
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    /* height: 100vh; */
+    gap: 90px;
 }
 
 
 nav{
     /* border: 1px solid; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
     align-items: center;
 }
 
@@ -26,20 +45,29 @@ nav{
     /* border: 1px solid; */
     height: 90vh;
     width: 90%;
-    background-color: #fa6800;
+    background-color: var(--bg2);
     border-radius: 30px;
     box-shadow: 0 0 50px#1a0e07;
 }
 
+.box2{
+        /* border: 1px solid; */
+        height: 90vh;
+        width: 90%;
+        background-color: var(--bg2);
+        border-radius: 30px;
+        box-shadow: 0 0 50px#1a0e07;
+}
+
 /* Gaya untuk mode terang */
-.dark-mode {
+/* .dark-mode {
     background-color: #333;
     color: #fff;
     /* display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh; */
-}
+/* }  */
 
 .im{
     /* border: 1px solid; */
@@ -60,7 +88,9 @@ nav{
     border: 1px solid blueviolet;
     box-shadow: 0 0 60px black;
     border-radius: 30px;
-    margin-top: 20px;
+    margin-top: 2px;
+    width: 230px;
+    
 }
 
 .crep{
@@ -74,6 +104,22 @@ nav{
     gap: 200px;
 }
 
+.web2{
+    width: 403px;
+}
+
+.web2 ul{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.web2 ul li {
+    list-style: none;
+    cursor: pointer;
+    color: var(--color);
+}
+
 .text-animasi {
     position: absolute;
     /* border: 1px solid; */
@@ -82,9 +128,9 @@ nav{
     /* font-size: 24px; */
     font-weight: bold;
     /* white-space: nowrap; */
-    color: rgba(30, 110, 121, 0.897);
+    color: var(--animasiTex);
     overflow: hidden;
-    border-right: 2px solid #0c0909; /* Simulasikan kursor yang berkedip */
+    border-right: 2px solid #1566b3; /* Simulasikan kursor yang berkedip */
 }
 
 span h4{
@@ -104,12 +150,9 @@ button {
     background: none;
     border: none;
     border-radius: 70px;
-    animation: colorChange 2s infinite alternate;
+    animation: var(--animasiButton);
 }
 
-.dark-button{
-    animation: colorChange2 2s infinite alternate;
-}
 
 button i{
     /* width: 1px; */
@@ -154,7 +197,9 @@ button i{
 
 .avatar img{
     /* position: absolute; */
-    width: 390px;
-    border-radius: 100px;
-    background-color: rgb(20, 66, 105);
+    width: 360px;
+    height: 1%;
+    border-radius: 60px;
+    margin-left: 203px;
+    /* background-color: rgb(20, 66, 105); */
 }
