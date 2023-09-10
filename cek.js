@@ -17,19 +17,19 @@ function typeText() {
     if (index < textToType.length) {
         textAnimation.textContent += textToType[index];
         index++;
-        setTimeout(typeText, 50); // Waktu penundaan antar karakter
+        setTimeout(typeText, 50); 
     } else {
-        setTimeout(eraseText, 1000); // Tunggu 1 detik sebelum menghapus teks
+        setTimeout(eraseText, 1000); 
     }
 }
 
 function eraseText() {
     if (textAnimation.textContent.length > 0) {
         textAnimation.textContent = textAnimation.textContent.slice(0, -1);
-        setTimeout(eraseText, 25); // Waktu penundaan antar karakter saat menghapus
+        setTimeout(eraseText, 25); 
     } else {
         index = 0;
-        setTimeout(typeText, 1000); // Tunggu 1 detik sebelum mulai mengetik ulang
+        setTimeout(typeText, 1000); 
     }
 }
 

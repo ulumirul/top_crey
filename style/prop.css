@@ -125,19 +125,31 @@ nav{
     margin-bottom: 62px;
 }
 
+.boxRight .busy h3{
+    color: green;
+}
+
 .boxRight .busy2{
     /* border: 1px solid; */
-    color: green;
+    color: var(--color);
     margin-bottom: 30px;
     width: 400px;
     padding: 10px;
     margin-left: 300px;
 }
 
+.boxRight .busy2 h3{
+    color: green;
+}
+
 .boxRight .busy3{
     /* border: 1px solid; */
     width: 300px;
     padding: 10px;
+}
+
+.boxRight .busy3 h3{
+    color: green;
 }
 
 .boxRight .busy3 ul{
@@ -148,6 +160,18 @@ nav{
 .boxRight .busy3 ul li{
     list-style: none;
     font-size: 26px;
+}
+
+.boxRight .busy3 ul .js{
+    color: yellow;
+}
+
+.boxRight .busy3 ul .css{
+    color: blue;
+}
+
+.boxRight .busy3 ul .html{
+    color: rgb(243, 167, 25);
 }
 
 .box4{
