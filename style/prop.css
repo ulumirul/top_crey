@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200&family=Manrope&family=Roboto+Slab:wght@200&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,17 +7,21 @@
 :root{
     --bg: #f38530b4;
     --bg2: #fa6800;
+    --bgB2: #da5d05;
     --color: black;
-    --animasiTex: rgb(30, 110, 121);
+    --animasiTex: rgb(14, 188, 211);
     --animasiButton: colorChange 2s infinite alternate;
+    --hr: rgb(21, 21, 245);
 }
 
 .dark-mode{
     --bg:  #333;
     --bg2:  #333;
+    --bgB2:  #333;
     --color: white;
     --animasiTex: rgb(180, 180, 27);
     --animasiButton: colorChange2 2s infinite alternate;
+    --hr: rgb(15, 238, 15);
 }
 
 body {
@@ -52,11 +57,106 @@ nav{
 
 .box2{
         /* border: 1px solid; */
+        display: flex;
         height: 90vh;
         width: 90%;
         background-color: var(--bg2);
         border-radius: 30px;
         box-shadow: 0 0 50px#1a0e07;
+        overflow: hidden;
+}
+
+.profil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    border-right: 1px solid;
+    width: 500px;
+    height: 600px;
+    background: var(--bgB2);
+}
+
+.profil img{
+    width: 200px;
+    border-radius: 50px;
+}
+
+.box2 .profil hr{
+    width: 150px;
+    border: none;
+    height: 1.9px;
+    background: var(--hr);
+}
+
+.box2 .profil .nama{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+}
+
+.box2 .profil .nama p{
+    font-weight: bold;
+    font-family: 'League Spartan';
+    font-size: 20px;
+    color: var(--color);
+}
+
+.bawah a{
+    color: var(--color);
+}
+
+.box3{
+    /* border: 1px solid; */
+    height: 90vh;
+    width: 90%;
+    background-color: var(--bg2);
+    border-radius: 30px;
+    box-shadow: 0 0 50px#1a0e07;
+}
+
+.boxRight .busy{
+    /* border: 1px solid; */
+    color: var(--color);
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 62px;
+}
+
+.boxRight .busy2{
+    /* border: 1px solid; */
+    color: green;
+    margin-bottom: 30px;
+    width: 400px;
+    padding: 10px;
+    margin-left: 300px;
+}
+
+.boxRight .busy3{
+    /* border: 1px solid; */
+    width: 300px;
+    padding: 10px;
+}
+
+.boxRight .busy3 ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boxRight .busy3 ul li{
+    list-style: none;
+    font-size: 26px;
+}
+
+.box4{
+    /* border: 1px solid; */
+    height: 90vh;
+    width: 90%;
+    background-color: var(--bg2);
+    border-radius: 30px;
+    box-shadow: 0 0 50px#1a0e07;
 }
 
 /* Gaya untuk mode terang */
@@ -114,10 +214,22 @@ nav{
     justify-content: space-around;
 }
 
-.web2 ul li {
-    list-style: none;
+.web2 ul li a {
+    text-decoration: none;
     cursor: pointer;
     color: var(--color);
+    font-family: Roboto Slab;
+    font-weight: bold;
+}
+
+.web2 ul li {
+    list-style: none;
+}
+
+.web2 ul li a:hover{
+    color: rgb(16, 236, 16);
+    font-weight: lighter;
+    font-size: larger;
 }
 
 .text-animasi {
@@ -127,6 +239,7 @@ nav{
     /* margin-right: 953px; */
     /* font-size: 24px; */
     font-weight: bold;
+    font-family: Roboto Slab;
     /* white-space: nowrap; */
     color: var(--animasiTex);
     overflow: hidden;
@@ -199,6 +312,7 @@ button i{
     /* position: absolute; */
     width: 360px;
     height: 1%;
+    margin-bottom: 23px;
     border-radius: 60px;
     margin-left: 203px;
     /* background-color: rgb(20, 66, 105); */
